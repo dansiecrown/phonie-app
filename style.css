@@ -1,0 +1,140 @@
+:root{
+    --pricol: #405A8D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* overflow: hidden; */
+}
+
+main{
+  display: flex;
+  justify-content: center;  
+}
+
+.left{
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    padding: 0 3em;
+    background: linear-gradient(180deg, #E1FFFB 0%, rgba(159, 191, 255, 0.48) 100%);
+    box-sizing: border-box;
+}
+
+.left h1{
+font-family: 'Product Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 2.1em;
+line-height: 110%;
+width: 70%;
+margin: auto;
+padding: 1em;
+color: var(--pricol)
+}
+
+.left img{
+    width: 50%;
+}
+
+.right{
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    padding: 5em;
+    box-sizing: border-box;
+}
+
+.right h1{
+font-family: 'Product Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 2.1em;
+line-height: 110%;
+width: 70%;
+margin: auto;
+padding: 1em;
+color: var(--pricol);   
+}
+
+form{
+    text-align: left;
+    width: 65%;
+    margin: auto;
+    font-family: 'Product Sans';
+    color: var(--pricol); 
+}
+
+#show{
+    display: none;
+}
+
+form div{
+margin-top: 1.5em;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, button{
+    padding: 0.7em;
+    background: rgba(225, 255, 251, 0.27);
+    border: 1px solid rgba(64, 90, 141, 0.18);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input:hover, select:hover{
+    outline: 2px solid #1497fa;
+    
+}
+
+.num{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#username{
+    width: 100%;
+}
+
+#code{
+width: 30%;
+}
+#userInput{
+    width: 62%;
+}
+
+form button{
+    margin-top: 1.5em;
+    width: 100%;
+    background-color: var(--pricol);
+    color: white;
+    
+}
+
+
+/* Style for the Mtn view */
+.icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.icon input{
+    width: 80%;
+}
