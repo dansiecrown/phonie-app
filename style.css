@@ -44,7 +44,7 @@ color: var(--pricol)
 .right{
     width: 50%;
     height: 100vh;
-    text-align: center;
+    text-align: left;
     padding: 5em;
     box-sizing: border-box;
 }
@@ -69,9 +69,7 @@ form{
     color: var(--pricol); 
 }
 
-#show{
-    display: none;
-}
+
 
 form div{
 margin-top: 1.5em;
@@ -123,6 +121,10 @@ form button{
 
 
 /* Style for the Mtn view */
+.right .container{
+    display: none;
+}
+
 .icon{
     width: 100%;
     display: flex;

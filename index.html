@@ -23,7 +23,7 @@
             <h1 id="text">Welcome to phonie App!</h1>
 
 
-            <form action="" id="show">
+            <form action="" id="form" novalidate>
                 <div>
                     <label for="username">Type in your full name</label>
                     <input placeholder="John Doe" name="username" id="username">
@@ -32,29 +32,22 @@
                 <div>
                     <label for="number">Type in your phone number</label>
                     <div class="num">
-                        <select id="code">
-                            <option>+234</option>
-                            <option>+234</option>
-                            <option>+234</option>
-                            <option>+234</option>
-                            <option>+234</option>
-                            <option>+234</option>
-                        </select>
+                        <input pattern="[0-9]{3}" title="Three numbers country code" id="code">
                         <input type="tel" name="number" id="userInput">
                     </div>
                 </div>
-                <button>Submit</button>
+                <button id="check">Submit</button>
             </form>
 
 
-            <div class="mtn">
+            <div class="container" id="mtn">
                 <form action="">
                     <div>
                         <label for="username">Your Telephone Carrier is MTN</label>
 
                         <div class="icon">
                             <img src="./assets/icons-network/mtn-logo.png" alt="MTN Logo">
-                            <input name="username" id="fn">
+                            <input name="username" id="lmtn" readonly>
                         </div>
                     </div>
 
@@ -63,14 +56,14 @@
                 </form>
             </div>
 
-            <div class="glo">
+            <div class="container" id="glo">
                 <form action="">
                     <div>
                         <label for="username">Your Telephone Carrier is Glo</label>
 
                         <div class="icon">
-                            <img src="./assets/icons-network/Glo_button.png" alt="MTN Logo">
-                            <input name="username" id="fn">
+                            <img src="./assets/icons-network/Glo_button.png" alt="Glo Logo">
+                            <input name="username" id="lglo" readonly>
                         </div>
                     </div>
 
@@ -79,29 +72,29 @@
                 </form>
             </div>
 
-            <div class="airtel">
+            <div class="container" id="airtel">
                 <form action="">
                     <div>
                         <label for="username">Your Telephone Carrier is Airtel</label>
 
                         <div class="icon">
-                            <img src="./assets/icons-network/airtel.png" alt="MTN Logo">
-                            <input name="username" id="fn">
+                            <img src="./assets/icons-network/airtel.png" alt="Airtel Logo">
+                            <input name="username" id="lair" readonly>
                         </div>
                     </div>
 
-                    <button id="submit">Reset</button>
+                    <button id="submitA-Za-z]">Reset</button>
                 </form>
             </div>
 
-            <div class="9mobile">
+            <div class="container" id="9mobile">
                 <form action="">
                     <div>
                         <label for="username">Your Telephone Carrier is 9mobile</label>
 
                         <div class="icon">
-                            <img src="./assets/icons-network/9mobile.jpg" alt="MTN Logo">
-                            <input name="username" id="fn">
+                            <img src="./assets/icons-network/9mobile.jpg" alt="9mobile Logo">
+                            <input name="username" id="leti" readonly>
                         </div>
                     </div>
 
