@@ -61,6 +61,15 @@ padding: 1em;
 color: var(--pricol);   
 }
 
+a{
+    text-decoration: none;
+}
+
+mark{
+    background: transparent;
+    color: #BE497B;   
+}
+
 form{
     text-align: left;
     width: 65%;
