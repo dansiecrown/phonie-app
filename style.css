@@ -140,3 +140,44 @@ form button{
 .icon input{
     width: 80%;
 }
+
+
+@media screen and (max-width: 860px) {
+    
+
+    main{
+        display: block;
+    }
+    main  .left{
+        padding: 100px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .left h1{
+        font-size: 1.7em;
+    }
+
+    .right{
+        width: 100%;
+        height: auto;
+        padding: 100px 0;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .right h1{
+        width: 80%;
+        margin: auto;
+        font-size: 1.5em;
+        
+    }
+
+    form{
+        text-align: left;
+        width: 80%;
+        margin: auto;
+        font-family: 'Product Sans';
+        color: var(--pricol); 
+    }
+}

@@ -23,7 +23,7 @@
             <h1 id="text">Welcome to phonie App!</h1>
 
 
-            <form action="" id="form" novalidate>
+            <form action="" id="form">
                 <div>
                     <label for="username">Type in your full name</label>
                     <input placeholder="John Doe" name="username" id="username">
@@ -32,7 +32,14 @@
                 <div>
                     <label for="number">Type in your phone number</label>
                     <div class="num">
-                        <input pattern="[0-9]{3}" title="Three numbers country code" id="code">
+                        <select id="code">
+                            <option>+234</option>
+                            <option>+244</option>
+                            <option>+237</option>
+                            <option>+242</option>
+                            <option>+247</option>
+                            <option>+232</option>
+                        </select>
                         <input type="tel" name="number" id="userInput">
                     </div>
                 </div>
@@ -106,7 +113,7 @@
     </main>
 
 
-    <script src="./script.js"></script>
+    <script src="/script.js"></script>
 
 </body>
 
