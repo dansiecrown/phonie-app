@@ -1,4 +1,30 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyCKyBNMp0tIornwrGK7zT6ZJyCalBPrN7U",
+    authDomain: "phone-nums.firebaseapp.com",
+    databaseURL: "https://phone-nums-default-rtdb.firebaseio.com",
+    projectId: "phone-nums",
+    storageBucket: "phone-nums.appspot.com",
+    messagingSenderId: "613008481003",
+    appId: "1:613008481003:web:eeeafdded7caa347c67cae",
+    measurementId: "G-QGH0CMT4H8"
+};
 
+//Initialize firebase
+firebase.initializeApp(firebaseConfig);
+
+//Reference your database
+let usersDB = firebase.database().ref("users");
+
+
+//Send data to the database
+const saveData = (num, username) => {
+    let newData = usersDB.push();
+
+    newData.set({
+        name: username,
+        number: num,
+    })
+}
 
 
 const mtnNumbers = ["0803", "0816", "0806", "0903", "0813", "0810", "0703", "0706", "0814", "0906", "0913", "0704"]
@@ -38,8 +64,14 @@ submit.addEventListener("click", collecUserInput)
 function collecUserInput(event) {
     event.preventDefault()
 
+<<<<<<< HEAD
+
+    let username = name.value;
+    let num = userRes.value;
+=======
     console.log(name)
     let username = name.value
+>>>>>>> 39067957cb96891537c653feb79260a9631585d5
     let userInput = userRes.value.substr(0, 4);
 
 
@@ -47,9 +79,11 @@ function collecUserInput(event) {
         alert(`Sorry ${username}, your number is incorrect, please try again`)
     } else {
         checkNetwork(userInput, username);
-        userRes.value = "";
-        name.value = "";
+
+        saveData(num, username)
     }
+
+
 }
 
 
