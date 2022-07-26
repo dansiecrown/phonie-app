@@ -17,12 +17,13 @@ let usersDB = firebase.database().ref("users");
 
 
 //Send data to the database
-const saveData = (num, username) => {
+const saveData = (num, username, email) => {
     let newData = usersDB.push();
 
     newData.set({
         name: username,
         number: num,
+        email: email,
     })
 }
 
@@ -46,6 +47,7 @@ const lmtn = document.getElementById("lmtn")
 const lglo = document.getElementById("lglo")
 const lair = document.getElementById("lair")
 const leti = document.getElementById("leti")
+const mail = document.getElementById("email")
 
 
 
@@ -64,14 +66,9 @@ submit.addEventListener("click", collecUserInput)
 function collecUserInput(event) {
     event.preventDefault()
 
-<<<<<<< HEAD
-
+    let email = mail.value;
     let username = name.value;
     let num = userRes.value;
-=======
-    console.log(name)
-    let username = name.value
->>>>>>> 39067957cb96891537c653feb79260a9631585d5
     let userInput = userRes.value.substr(0, 4);
 
 
@@ -80,7 +77,7 @@ function collecUserInput(event) {
     } else {
         checkNetwork(userInput, username);
 
-        saveData(num, username)
+        saveData(num, username, email)
     }
 
 

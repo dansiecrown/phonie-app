@@ -109,7 +109,7 @@ input:hover, select:hover{
     margin-top: 0;
 }
 
-#username{
+#username, #email{
     width: 100%;
 }
 

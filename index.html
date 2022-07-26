@@ -27,7 +27,12 @@
             <form action="" id="form">
                 <div>
                     <label for="username">Type in your full name</label>
-                    <input placeholder="John Doe" name="username" id="username">
+                    <input placeholder="John Doe" name="username" id="username" required>
+                </div>
+
+                <div>
+                    <label for="email">Type in your email address</label>
+                    <input placeholder="johndoe@example.com" name="email" id="email" required>
                 </div>
 
                 <div>
@@ -113,14 +118,9 @@
         </div>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 
-    <<<<<<< HEAD <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js">
-        </script>
-        <script src="./script.js"></script>
-
-        =======
-        <script src="./script.js"></script>
-        >>>>>>> 39067957cb96891537c653feb79260a9631585d5
+    <script src="./script.js"></script>
 
 </body>
 
